@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[SAMP Server Name]</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#"><img class="desktop_navbar_logo_img" src="media/logo_small.png" alt="logo" draggable="false"></a>
+      <a href="https://www.open.mp/servers" class="desktop_navbar_link" target="_blank">OpenMp</a>
+      <a href="#discord" class="desktop_navbar_link scroll">Community</a>
+      <a href="#about" class="desktop_navbar_link scroll">About Us</a>
+      <a href="https://www.gitbook.com/" class="desktop_navbar_link">GitBook</a>
+      <a href="webs/cfx.html" class="desktop_navbar_link">Connect</a>
+      <a href="webs/rules.html" class="desktop_navbar_link">Rules</a>
+      <div class="desktop_navbar_link2_div">
+          <a href="#join" class="desktop_navbar_link2 scroll">Join Us!</a>
+      </div>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo" draggable="false"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://www.open.mp/servers" target="_blank">OpenMp</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">Community</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#about">About Us</a>
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="https://www.gitbook.com" >GitBook</a>
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="webs/cfx.html" >Connect</a>
+          <a class="mobile_navbar_link" onclick="mobile_navbar_link_hider()" href="webs/rules.html" >Rules</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">Internet Protocol</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()" draggable="false">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="media/logo.png" alt="logo" draggable="false">
+        </a>
+        <div class="main1_description">
+          <a >Explore,<br>discover the</a>
+          <a class="main1_actcent">New Horizon</a><a>.</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">play.example.com</span>
+            <br>
+            <span class="main1_ipcopier_text2">Click to copy</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("play.example.com");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('Copied IP to clipboard'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+        <a href="#more" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+<audio id="background-music" autoplay loop>
+  <source src="./media/gta 4 theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  window.addEventListener('load', () => {
+      const audio = document.getElementById('background-music');
+      if (audio) {
+          audio.play().catch(error => {
+              console.log('Playback prevented:', error);
+          });
+      }
+  });
+</script>
+
+      </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">What we have</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder.png">
+            <a class="main2_feature_headline">Feature 1</a>
+            <a class="main2_feature_text">Feature description</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder copy.png">
+            <a class="main2_feature_headline">Feature 2</a>
+            <a class="main2_feature_text">Feature description</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder copy 2.png">
+            <a class="main2_feature_headline">Feature 3</a>
+            <a class="main2_feature_text">Feature description</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder copy 3.png">
+            <a class="main2_feature_headline">Feature 4</a>
+            <a class="main2_feature_text">Feature description</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/placeholder copy 4.png">
+            <a class="main2_feature_headline">Feature 5</a>
+            <a class="main2_feature_text">Feature description</a>
+          </div>
+        </div>
+      </div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">Join the Discord</a>
+        <div class="main4_dc_div">
+          <iframe class="main4_dc_widget" src="https://discord.com/widget?id=1036113714019057744&theme=dark" width="350" height="500" title="discord" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">Lets talk!</a>
+            <a class="main4_dc_description"> ・Meet other players <br> ・Ask questions <br> ・Get notified about updates <br> ・Give feedback  <br><br> &amp; more </a>
+            <a href="https:discord.gg/uSCbF5UUaa" class="main4_dc_button_a">
+              <div class="main4_dc_button">Join</div>
+            </a>
+          </div>
+        </div>
+        <div class="main4_5">
+            <a class="headline">Download The Grand Theft Auto Multiplayer</a>
+            <div class="main4_5_dc_div">
+              <div class="main4_5_dc_description_div">
+                <a class="main4_5_dc_description_title">SAMP Launcher</a>
+                <a class="main4_5_dc_description"> Download San Andreas Multiplayer (SA-MP) and dive into an immersive online gaming experience, available on both PC and mobile platforms. Join a vast community of players exploring the expansive world of GTA: San Andreas together, engaging in thrilling missions, epic car chases, and intense multiplayer battles. Whether on your computer or mobile device, SA-MP offers endless hours of action-packed fun with friends and strangers alike!</a>
+
+                <a href="webs/download.html" class="main4_dc_button_a">
+                    <div class="main4_5_dc_button">Download On Desktop💻</div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher&pcampaignid=web_share" class="main4_dc_button_a">
+                    <div class="main4_5_dc_button">Download On Mobile📱</div>
+                </a>
+              </div>
+            </div>
+      </div>
+      <div id="about"></div>
+      <div class="main5">
+        <a class="headline">The Team Of Horizon</a>
+        <div class="main5_admin_div">
+          <div class="main5_admins_div main5_admins_dev_type2">
+            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder.webp">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_owner">[CEO]</a>
+              <a class="main5_admins_description_title" href="webs/error.html">Ceo Name</a>
+              <a class="main5_admins_description">Ceo<br>description</a>
+            </div>
+          </div>
+          <div class="main5_admins_div main5_admins_dev_type1">
+            <img class="main5_admins_img" alt="admin member img" src="media/member_placeholder copy.webp">
+            <div class="main5_admins_description_div">
+              <a class="main5_admins_description_rank main5_admins_description_rank_admin">[Owner]</a>
+              <a class="main5_admins_description_title" href="webs/error.html">Owner Name</a>
+              <a class="main5_admins_description">Owner<br>description</a>
+            </div>
+          </div>
+        </div>
+        <div class="main5_supporter_div">
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder copy 2.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Management]</a>
+              <a class="main5_supporters_description_title" href="webs/error.html">Replacable Management</a>
+              <a class="main5_supporters_description">Mangement User<br>writes</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder copy 3.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Head Coordinator]</a>
+              <a class="main5_supporters_description_title" href="webs/error.html">Replacable Head Coordinator 2</a>
+              <a class="main5_supporters_description">Head Coordinator<br>Description</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder copy 4.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Developer]</a>
+              <a class="main5_supporters_description_title" href="webs/error.html">Replacable Developer 3</a>
+              <a class="main5_supporters_description">Developer<br>Description</a>
+            </div>
+          </div>
+          <div class="main5_supporters_div">
+            <img class="main5_supporters_img" alt="supporters member img" src="media/member_placeholder copy 5.webp">
+            <div class="main5_supporters_description_div">
+              <a class="main5_supporters_description_rank main5_supporters_description_rank_supporter">[Head Admin]</a>
+              <a class="main5_supporters_description_title" href="webs/error.html">Replacable Head admin 4</a>
+              <a class="main5_supporters_description">Head admin<br>Description</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="join"></div>
+      <div class="main3">
+        <a class="headline">Internet Portocol</a>
+        <div class="main3_join_div_div">
+          <div class="main3_join_div">
+            <a class="main3_join_title">Desktop</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>play.example.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="main3_join_div">
+            <a class="main3_join_title">Mobile</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>IP:</a>
+                <a>Port:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>be.example.com</a>
+                <a>69420</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p href="https:discord.gg/uSCbF5UUaa" class="footer-bottom-text">Made by Sebastian Varkey | Powered By God Dc Developer</p>
+        </div>
+    </footer>
+  </body>
+</html>

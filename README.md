@@ -21,6 +21,13 @@ Written with HTML and a lot of CSS and the minimal usage of JavaScript.
 - Mobile support Ui
 - Simple Configuration
 - Hover animations
+- HelpLine Chat
+- Game Download Links 
+- Rules Section(Optional)
+- Pc Download Page 
+- 404 page 
+- Bg music
+- cfx type page (non connected)
 
 
 ### How do I make the Discord Embed work?
